@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* NOC Standard 5.1 specific classes */
+.noc-card {
+    background-color: #0f172a; /* slate-900 */
+    border: 1px solid #1e293b; /* slate-800 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.noc-text-telemetry {
+    color: #06b6d4; /* cyan-500 */
+}
+
+.noc-text-activation {
+    color: #10b981; /* emerald-500 */
+}
+
+.noc-border-telemetry {
+    border-color: #06b6d4;
+}
+
+.noc-border-activation {
+    border-color: #10b981;
+}
+
+/* Base gradients and effects */
+.bg-grid-slate-900 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.dark .bg-grid-slate-900 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(51 65 85 / 0.3)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
