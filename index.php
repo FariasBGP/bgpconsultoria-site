@@ -56,7 +56,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="h-10 w-auto" src="img/bgp_logo_main.png" alt="BGP Consultoria"
+                    <img class="h-10 w-auto" src="img/logo-branca-topo.png" alt="BGP Consultoria"
                         onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -217,6 +217,9 @@
     <section id="solucoes" class="py-24 bg-slate-50 text-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
+                <div class="flex justify-center mb-8">
+                    <img src="img/logo1.png" alt="BGP Logo" class="h-24 w-auto drop-shadow-sm">
+                </div>
                 <h2 class="text-cyan-600 font-mono font-medium tracking-widest text-sm mb-3">INFRAESTRUTURA HIGH DENSITY
                 </h2>
                 <h3 class="text-3xl md:text-5xl font-bold mb-6">Arquitetura Desenhada para a Próxima Fase</h3>
