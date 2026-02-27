@@ -56,8 +56,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="h-10 w-auto" src="img/logo-branca-topo.png" alt="BGP Consultoria"
-                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
+                    <img class="h-10 w-auto" src="img/logo-transparente.png" alt="BGP Consultoria"
+                        onerror="this.onerror=null; this.src='img/logo-separado.png'">
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#lazaro"
@@ -281,8 +281,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="w-full lg:w-5/12 mb-12 lg:mb-0 space-y-8">
-                    <img src="img/bgp_logo_main.png" alt="BGP Logotipo" class="h-16 w-auto mb-8 rounded-md bg-white p-2"
-                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
+                    <img src="img/logo-separado.png" alt="BGP Logotipo" class="h-16 w-auto mb-8 rounded-md bg-white p-2"
+                        onerror="this.onerror=null; this.src='img/logo.jpg'">
                     <h3 class="text-3xl md:text-5xl font-bold text-white leading-tight">20 Anos Dominando Ambientes de
                         Missão Crítica</h3>
                     <p class="text-lg text-slate-400">
@@ -513,9 +513,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <img src="img/bgp_logo_main.png" alt="BGP Consultoria"
+                    <img src="img/logo-transparente.png" alt="BGP Consultoria"
                         class="h-8 w-auto mb-4 opacity-50 hover:opacity-100 transition-opacity"
-                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
+                        onerror="this.onerror=null; this.src='img/logo.jpg'">
                     <p class="text-slate-500 text-sm">© <?php echo date('Y'); ?> BGP Consultoria. Arquitetura de Redes
                         Elite.</p>
                 </div>
