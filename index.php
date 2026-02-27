@@ -56,8 +56,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="h-10 w-auto" src="MATERIAL/bgp_logomarca_branco.png" alt="BGP Consultoria"
-                        onerror="this.onerror=null; this.src='MATERIAL/logo.jpg'">
+                    <img class="h-10 w-auto" src="img/bgp_logo_main.png" alt="BGP Consultoria"
+                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#lazaro"
@@ -206,7 +206,7 @@
                     <div
                         class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg blur opacity-20">
                     </div>
-                    <img src="img-lazaro/Principal.png" alt="Dashboard Lázaro"
+                    <img src="img/Principal.png" alt="Dashboard Lázaro"
                         class="relative rounded-lg shadow-2xl border border-slate-700 object-cover w-full">
                 </div>
             </div>
@@ -278,9 +278,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="w-full lg:w-5/12 mb-12 lg:mb-0 space-y-8">
-                    <img src="MATERIAL/bgp_logomarca_facebook.png" alt="BGP Logotipo"
-                        class="h-16 w-auto mb-8 rounded-md bg-white p-2"
-                        onerror="this.onerror=null; this.src='MATERIAL/logo.jpg'">
+                    <img src="img/bgp_logo_main.png" alt="BGP Logotipo" class="h-16 w-auto mb-8 rounded-md bg-white p-2"
+                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
                     <h3 class="text-3xl md:text-5xl font-bold text-white leading-tight">20 Anos Dominando Ambientes de
                         Missão Crítica</h3>
                     <p class="text-lg text-slate-400">
@@ -306,7 +305,7 @@
                         class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full blur-2xl opacity-30">
                     </div>
                     <div class="flex items-center mb-8">
-                        <img src="MATERIAL/FOTO PERFIL.jpg" alt="Farias"
+                        <img src="img/FOTO PERFIL.jpg" alt="Farias"
                             class="w-20 h-20 rounded-full border-2 border-slate-700 object-cover"
                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Farias&background=random'">
                         <div class="ml-6">
@@ -511,9 +510,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <img src="MATERIAL/bgp_logomarca_branco.png" alt="BGP Consultoria"
+                    <img src="img/bgp_logo_main.png" alt="BGP Consultoria"
                         class="h-8 w-auto mb-4 opacity-50 hover:opacity-100 transition-opacity"
-                        onerror="this.onerror=null; this.src='MATERIAL/logo.jpg'">
+                        onerror="this.onerror=null; this.src='img/bgp_logo_monogram.png'">
                     <p class="text-slate-500 text-sm">© <?php echo date('Y'); ?> BGP Consultoria. Arquitetura de Redes
                         Elite.</p>
                 </div>
