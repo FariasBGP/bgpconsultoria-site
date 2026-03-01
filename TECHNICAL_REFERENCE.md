@@ -15,8 +15,16 @@
 | --- | --- | --- |
 | Lázaro Webhook HMAC | `WEBHOOK_SECRET` | `bgp_noc_secret_key_2026` |
 | Endpoint Lázaro API | `FASTAPI_URL` | `https://lazaro.bgpconsultoria.com.br/api/v1/leads` |
+| Base de Dados MySQL | DB_NAME | `BGP_Consultoria_ISP` |
+| Utilizador BD | DB_USER | `bgp_admin` |
+| Password BD | DB_PASS | `PAsSnhF0rt3@202` |
 
 *O Webhook Secret deve ser sincronizado com a configuração da API FastAPI no servidor backend principal.*
+
+## Database & Migrations
+
+- Foi criada a pasta `migrations/` onde os esquemas SQL devem ser depositados.
+- **Para implantar em produção:** Executar o script `migrations/001_create_leads_mentoria.sql` no MySQL Server/MariaDB através do terminal (`mysql -u bgp_admin -p BGP_Consultoria_ISP < migrations/001_create_leads_mentoria.sql`).
 
 ## Ferramentas Gravadas (Lead Magnet)
 
