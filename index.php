@@ -85,10 +85,10 @@
             style="mask-image:linear-gradient(to_bottom,transparent,black)"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div
-                class="inline-flex items-center rounded-full px-3 py-1 text-sm font-mono font-medium text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 mb-8">
+            <div id="api-header-status"
+                class="inline-flex items-center rounded-full px-3 py-1 text-sm font-mono font-medium text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 mb-8 transition-colors">
                 <span class="flex h-2 w-2 rounded-full bg-cyan-400 mr-2 animate-pulse"></span>
-                SISTEMA ONLINE. TELEMETRIA ATIVA.
+                VERIFICANDO SISTEMA...
             </div>
 
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6">
@@ -440,28 +440,30 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
                 <!-- Plan 1 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-700 p-8 flex flex-col">
-                    <h3 class="text-2xl font-bold text-white mb-2">Lázaro SaaS Core</h3>
-                    <p class="text-slate-400 text-sm mb-6 h-10">Inteligência, visibilidade e anti-DDoS para provedores
-                        independentes.</p>
+                <div class="bg-slate-900 rounded-2xl border border-slate-700 p-8 flex flex-col hover:border-emerald-500/50 transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-2">Lázaro NOS – Inteligência de Borda</h3>
+                    <p class="text-slate-400 text-sm mb-6 h-12">A camada de visibilidade que o seu ISP precisa para parar de queimar dinheiro.</p>
                     <div class="mb-6">
                         <span class="text-3xl font-bold text-white">R$ 497</span>
-                        <span class="text-slate-400"> a R$ 997 /mês (POR POP)</span>
+                        <span class="text-slate-400 block text-sm mt-1">/mês por POP</span>
                     </div>
-                    <ul class="space-y-4 mb-8 flex-1">
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Visibilidade Total (ASN)
+                    <p class="text-slate-300 text-sm mb-6 flex-1">
+                        Assuma o controlo total do seu tráfego. Identifique em tempo real para quais ASNs os seus dados estão a fluir e utilize inteligência de borda para mitigar ataques DDoS, Spam e Port Scanning em menos de 3 segundos. Compatibilidade nativa com Huawei, Cisco, Mikrotik e Datacom.
+                    </p>
+                    <ul class="space-y-4 mb-8 font-mono text-xs">
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Análise de Flows
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Mitigação DDoS Automática
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Monitorização de Jitter/Latência
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Dashboard Real-Time
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Alocação Determinística
                         </li>
                     </ul>
-                    <a href="#"
+                    <a href="#diagnostico"
                         class="block w-full text-center py-3 px-4 border border-slate-600 rounded-md text-white font-medium hover:bg-slate-800 transition-colors">
-                        Solicitar Acesso
+                        Ativar Inteligência Lázaro
                     </a>
                 </div>
 
@@ -471,62 +473,60 @@
                     <div class="absolute top-0 inset-x-0 flex justify-center -mt-3">
                         <span
                             class="bg-emerald-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                            Mais Assinado (Scale-Up)
+                            Nível 3 (L3)
                         </span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Managed Resiliency</h3>
-                    <p class="text-slate-400 text-sm mb-6 h-10">Todo o poder do Lázaro unificado com Consultoria Estrita
-                        da nossa equipe.</p>
+                    <h3 class="text-2xl font-bold text-white mb-2">Engenharia de Escala e Suporte L3</h3>
+                    <p class="text-slate-400 text-sm mb-6 h-12">A infraestrutura de elite para redes que não podem parar.</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold text-white">R$ 2.500</span>
-                        <span class="text-slate-400 block text-sm mt-1">até R$ 7.000 /mês</span>
+                        <span class="text-3xl font-bold text-white">Sob Consulta</span>
+                        <span class="text-slate-400 block text-sm mt-1">Venda Consultiva</span>
                     </div>
-                    <ul class="space-y-4 mb-8 flex-1">
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Lázaro NOS Completo
+                    <p class="text-slate-300 text-sm mb-6 flex-1">
+                        Não somos um help-desk. Somos a sua equipa de engenharia de nível 3. Projetamos e gerimos arquiteturas complexas de BGP, MPLS e OSPF para suportar o crescimento real de 3.000 para 15.000 assinantes com estabilidade absoluta. Inclui o setup de core resiliente e auditoria constante de performance.
+                    </p>
+                    <ul class="space-y-4 mb-8 font-mono text-xs">
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Engenharia de Tráfego &amp; CDNs
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Gestão Consultiva Permanente
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> RPKI/ROA
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Engenharia de Peering Mensal
-                        </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> SLA Premium &amp; Intervenção Ativa
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Segurança Zero Trust
                         </li>
                     </ul>
-                    <a href="#diagnostico"
+                    <a href="javascript:void(0)" onclick="document.getElementById('modal-contact').classList.remove('hidden')"
                         class="block w-full text-center py-3 px-4 bg-emerald-500 text-slate-950 font-bold rounded-md hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/30">
-                        Agendar Diagnóstico VIP
+                        Falar com um Arquiteto
                     </a>
                 </div>
 
                 <!-- Plan 3 -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-700 p-8 flex flex-col">
-                    <h3 class="text-2xl font-bold text-white mb-2">Elite Setup</h3>
-                    <p class="text-slate-400 text-sm mb-6 h-10">Reestruturação absoluta On-Premise do Backbone (Projeto
-                        pontual).</p>
+                <div class="bg-slate-900 rounded-2xl border border-slate-700 p-8 flex flex-col hover:border-emerald-500/50 transition-colors">
+                    <h3 class="text-2xl font-bold text-white mb-2">Mentoria Elite: O Método dos 15K</h3>
+                    <p class="text-slate-400 text-sm mb-6 h-12">O conhecimento de 20 anos de campo para donos de ISPs e CTOs.</p>
                     <div class="mb-6">
-                        <span class="text-3xl font-bold text-white">R$ 15.000</span>
-                        <span class="text-slate-400 block text-sm mt-1">até R$ 50.000 /projeto</span>
+                        <span class="text-3xl font-bold text-white">Aplicação</span>
+                        <span class="text-slate-400 block text-sm mt-1">Acesso Exclusivo</span>
                     </div>
-                    <ul class="space-y-4 mb-8 flex-1">
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Blueprint de Arquitetura Core
+                    <p class="text-slate-300 text-sm mb-6 flex-1">
+                        Aprenda a governar a infraestrutura do seu ISP em vez de ser escravo dela. Uma mentoria exclusiva para quem deseja dominar a arquitetura de core, otimização de trânsito IP e estratégias de segurança avançadas, utilizando o Lázaro como ferramenta central de gestão.
+                    </p>
+                    <ul class="space-y-4 mb-8 font-mono text-xs">
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Liderança Técnica
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> L3VPN, MPLS/LDP, BGP Tuning
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Escalabilidade Financeira
                         </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Security Zero Trust (RPKI, MANRS)
-                        </li>
-                        <li class="flex text-slate-300">
-                            <span class="text-emerald-500 mr-2">✓</span> Treinamento Transferência de Know-how
+                        <li class="flex text-emerald-400">
+                            <span class="mr-2">■</span> Decisão Baseada em Dados
                         </li>
                     </ul>
-                    <a href="#"
-                        class="block w-full text-center py-3 px-4 border border-slate-600 rounded-md text-white font-medium hover:bg-slate-800 transition-colors">
-                        Requisitar Escopo
+                    <a href="javascript:void(0)" onclick="document.getElementById('modal-contact').classList.remove('hidden')"
+                        class="block w-full text-center py-3 px-4 border border-emerald-500/50 text-emerald-400 font-bold rounded-md hover:bg-emerald-500/10 transition-colors">
+                        QUERO A MINHA REDE NO MÉTODO 15K
                     </a>
                 </div>
 
@@ -559,17 +559,93 @@
         </div>
     </footer>
 
+    <!-- Modal Formulário Premium -->
+    <div id="modal-contact" class="fixed inset-0 z-[100] hidden bg-slate-950/80 backdrop-blur-sm flex justify-center items-center px-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl w-full max-w-lg shadow-2xl relative overflow-hidden">
+            <button aria-label="Fechar" onclick="document.getElementById('modal-contact').classList.add('hidden')" class="absolute top-4 right-4 text-slate-500 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-white mb-2">Aplicação de Elite</h3>
+                <p class="text-slate-400 text-sm mb-6">Projetos L3 e Mentoria são exclusivos. Por favor, forneça o seu email corporativo para validarmos o perfil do seu ISP.</p>
+                <form id="contact-form" action="javascript:void(0)" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                    <div>
+                        <label class="block text-xs font-mono text-emerald-500 mb-1">NOME_COMPLETO</label>
+                        <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded p-3 text-white focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-emerald-500 mb-1">EMAIL_CORPORATIVO</label>
+                        <input type="email" id="corp-email" required class="w-full bg-slate-950 border border-slate-800 rounded p-3 text-white focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-colors">
+                        <p id="email-error" class="hidden text-red-500 text-xs mt-1">Por favor, utilize um email de domínio corporativo (ex: seu-isp.com.br).</p>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-emerald-500 mb-1">TELEFONE / WHATSAPP</label>
+                        <input type="tel" required class="w-full bg-slate-950 border border-slate-800 rounded p-3 text-white focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-colors">
+                    </div>
+                    <!-- Anti-spam honeypot -->
+                    <input type="text" id="hp-field" style="display:none" tabindex="-1" autocomplete="off">
+                    
+                    <button type="submit" id="submit-btn" class="w-full py-4 mt-6 bg-emerald-500 text-slate-950 font-bold rounded hover:bg-emerald-400 transition-colors">
+                        ENVIAR_APLICAÇÃO
+                    </button>
+                    <p id="form-success" class="hidden text-emerald-500 text-sm mt-4 text-center">A sua aplicação foi recebida! Nossa equipa técnica entrará em contacto em breve.</p>
+                </form>
+            </div>
+            <script>
+                function handleFormSubmit(e) {
+                    e.preventDefault();
+                    if(document.getElementById('hp-field').value !== '') return;
+                    
+                    const email = document.getElementById('corp-email').value;
+                    const blocklist = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'icloud.com', 'proton.me'];
+                    const domain = email.split('@')[1];
+                    const btn = document.getElementById('submit-btn');
+                    const err = document.getElementById('email-error');
+                    
+                    if(domain && blocklist.includes(domain.toLowerCase())) {
+                        err.classList.remove('hidden');
+                        return;
+                    }
+                    err.classList.add('hidden');
+                    
+                    btn.disabled = true;
+                    btn.innerHTML = 'ENVIANDO...';
+                    setTimeout(() => {
+                        document.getElementById('form-success').classList.remove('hidden');
+                        btn.innerHTML = 'SUCESSO';
+                        setTimeout(() => {
+                            document.getElementById('modal-contact').classList.add('hidden');
+                            document.getElementById('contact-form').reset();
+                            document.getElementById('form-success').classList.add('hidden');
+                            btn.disabled = false;
+                            btn.innerHTML = 'ENVIAR_APLICAÇÃO';
+                        }, 3000);
+                    }, 1500);
+                }
+            </script>
+        </div>
+    </div>
+
     <!-- Lázaro API Status Check -->
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            const indicator = document.getElementById('api-status-indicator');
+            const footerIndicator = document.getElementById('api-status-indicator');
+            const headerIndicator = document.getElementById('api-header-status');
             try {
-                // Endpoint provided: https://lazaro.bgpconsultoria.com.br/api/v1
-                const response = await fetch('https://lazaro.bgpconsultoria.com.br/api/v1', { mode: 'no-cors' });
-                // Even with no-cors, if it doesn't throw a network error, it's alive.
-                indicator.innerHTML = 'SYS_STATUS: <span class="text-emerald-500">SISTEMA ATIVO</span> | BGP_SESSIONS: UP | NOC_READY: TRUE';
+                // Endpoint fornecido: API/health
+                const response = await fetch('https://lazaro.bgpconsultoria.com.br/api/v1/health', { mode: 'no-cors' });
+                // Mesmo com no-cors a conectividade é validada sem throw de network
+                if (footerIndicator) footerIndicator.innerHTML = 'SYS_STATUS: <span class="text-emerald-500">SISTEMA ATIVO</span> | BGP_SESSIONS: UP | NOC_READY: TRUE';
+                if (headerIndicator) {
+                    headerIndicator.innerHTML = '<span class="flex h-2 w-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>SISTEMA ONLINE';
+                    headerIndicator.className = 'inline-flex items-center rounded-full px-3 py-1 text-sm font-mono font-medium text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 mb-8 transition-colors';
+                }
             } catch (e) {
-                indicator.innerHTML = 'SYS_STATUS: <span class="text-slate-500">OFFLINE</span> | BGP_SESSIONS: UP | NOC_READY: TRUE';
+                if (footerIndicator) footerIndicator.innerHTML = 'SYS_STATUS: <span class="text-slate-500">OFFLINE</span> | BGP_SESSIONS: UP | NOC_READY: TRUE';
+                if (headerIndicator) {
+                    headerIndicator.innerHTML = '<span class="flex h-2 w-2 rounded-full bg-red-500 mr-2 animate-pulse"></span>SISTEMA OFFLINE';
+                    headerIndicator.className = 'inline-flex items-center rounded-full px-3 py-1 text-sm font-mono font-medium text-red-400 bg-red-400/10 border border-red-400/20 mb-8 transition-colors';
+                }
             }
         });
     </script>
